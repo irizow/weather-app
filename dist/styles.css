@@ -1,0 +1,184 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(39, 8, 69);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*HEADER*/
+
+.header {
+    font-size: 30px;
+    display: flex;
+    width: 97vw;
+    padding: 1.5vw;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+
+.header>div {
+    border-radius: 25px;
+    background-color: white;
+    display: flex;
+    padding: 0.5vw;
+}
+
+/*SWITCH BUTTON*/
+.switch {
+	position: relative;
+	display: block;
+	vertical-align: top;
+	width: 100px;
+	height: 30px;
+	padding: 3px;
+	margin: 0 10px 10px 0;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF 25px);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF 25px);
+	border-radius: 18px;
+	box-shadow: inset 0 -1px white, inset 0 1px 1px rgba(0, 0, 0, 0.05);
+	cursor: pointer;
+	box-sizing:content-box;
+}
+.switch-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	box-sizing:content-box;
+}
+.switch-label {
+	position: relative;
+	display: block;
+	height: inherit;
+	font-size: 10px;
+	text-transform: uppercase;
+	background: #eceeef;
+	border-radius: inherit;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.15);
+	box-sizing:content-box;
+}
+.switch-label:before, .switch-label:after {
+	position: absolute;
+	top: 50%;
+	margin-top: -.5em;
+	line-height: 1;
+	-webkit-transition: inherit;
+	-moz-transition: inherit;
+	-o-transition: inherit;
+	transition: inherit;
+	box-sizing:content-box;
+}
+.switch-label:before {
+	content: attr(data-off);
+	right: 11px;
+	color: #000000;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+.switch-label:after {
+	content: attr(data-on);
+	left: 11px;
+	color: #FFFFFF;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label {
+	background: #540b78;
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15), inset 0 0 3px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+}
+.switch-input:checked ~ .switch-label:before {
+	opacity: 0;
+}
+.switch-input:checked ~ .switch-label:after {
+	opacity: 1;
+}
+.switch-handle {
+	position: absolute;
+	top: 4px;
+	left: 4px;
+	width: 28px;
+	height: 28px;
+	background: linear-gradient(to bottom, #FFFFFF 40%, #f0f0f0);
+	background-image: -webkit-linear-gradient(top, #FFFFFF 40%, #f0f0f0);
+	border-radius: 100%;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.switch-handle:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -6px;
+	width: 12px;
+	height: 12px;
+	background: linear-gradient(to bottom, #eeeeee, #FFFFFF);
+	background-image: -webkit-linear-gradient(top, #eeeeee, #FFFFFF);
+	border-radius: 6px;
+	box-shadow: inset 0 1px rgba(0, 0, 0, 0.02);
+}
+.switch-input:checked ~ .switch-handle {
+	left: 74px;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+/*SEARCH BAR*/
+
+.header>div>input {
+    border: none;
+    background-color: white;
+    font-size: 16px;
+}
+
+.header>div>img {
+    width: 20px;
+}
+
+#content {
+    padding: 5vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.weathercard {
+    padding: 10px 50px;
+    background-color:  rgba(0, 0, 0, 0.404);
+    color: white;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weathericon {
+    width: 6vw;
+    filter: invert(100%)
+}
+
+.futurecardsdiv {
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: black;
+}
+
+.futuredaycard {
+    color: white;
+    padding: 1vw;
+    border: 1px solid black;
+}
+
+.futuredaycard img {
+    filter: invert(100%)
+}
