@@ -1,33 +1,41 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <header class="header">
+      <div class="apptitle">
+        <img class="appicon" src="../src/images/icons/appicon2.svg" />
         <span>Your Weather</span>
-        <div>
-            <input id="location-input" type="text" placeholder="Search location by name or postcode                       ">
-            <img id="magnifying" src="../src/images/icons/magnifying-glass-solid.svg">
-        </div>
-        <label class="switch">
-            <input class="switch-input" type="checkbox" />
-            <span class="switch-label" data-on="ºF" data-off="ºC"></span> 
-            <span class="switch-handle"></span> 
-        </label>
+      </div>
+      <div class="searchbar">
+        <input
+          id="location-input"
+          type="text"
+          placeholder="Search location by name or postcode                       "
+        />
+        <img
+          id="magnifying"
+          src="../src/images/icons/magnifying-glass-solid.svg"
+        />
+      </div>
+      <label class="switch">
+        <input class="switch-input" type="checkbox" />
+        <span class="switch-label" data-on="ºF" data-off="ºC"></span>
+        <span class="switch-handle"></span>
+      </label>
     </header>
-    <div id="content">
-    </div>
+    <div id="content"></div>
     <div class="button-container">
-        <div id="hourly-button">Hourly</div>
-        <div id="daily-button">Daily</div>
+      <div id="hourly-button" class="btn-forecast active">Hourly</div>
+      <div id="daily-button" class="btn-forecast">Daily</div>
     </div>
     <div id="forecast"></div>
-    
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
