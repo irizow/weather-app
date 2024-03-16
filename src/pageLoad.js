@@ -60,8 +60,8 @@ function getWeatherCondition(response, loop, isHourly) {
 
 function getWeatherAssets(weatherCondition, isNight) {
   const basePath = {
-    backgrounds: "../src/images/backgrounds/",
-    icons: "../src/images/weather-icons-master/svg/",
+    backgrounds: "./src/images/backgrounds/",
+    icons: "./src/images/weather-icons-master/svg/",
   };
   const assets = {
     Rain: {
