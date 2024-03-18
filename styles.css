@@ -2,6 +2,10 @@
   font-family: "Nunito";
   src: url("../src/images/Nunito-VariableFont_wght.ttf");
 }
+
+html {
+  width: 100vw;
+}
 body {
   margin: 0;
   padding: 0;
@@ -14,8 +18,7 @@ body {
   background-position: center;
   font-family: "Nunito", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  height: 100vh;
-  width: 100vw;
+
 }
 
 /*HEADER*/
@@ -172,7 +175,7 @@ body {
 
 #content {
   padding: 5vw;
-  width: 100vw;
+
   display: flex;
   justify-content: center;
   align-items: center;
