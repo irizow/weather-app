@@ -47,7 +47,22 @@ body {
 }
 
 .appicon {
-  width: 40px;
+  width: 70px;
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .searchbar {
+    width: 60vw;
+    height: 1rem;
+    padding: 1rem;
+    justify-content: space-between;
+  }
 }
 
 /*SWITCH BUTTON*/
@@ -199,7 +214,7 @@ body {
 }
 
 .weathericon {
-  width: 6vw;
+  width: 6rem;
   filter: invert(100%);
 }
 
@@ -208,10 +223,12 @@ body {
   border-radius: 25px;
   display: flex;
   justify-content: space-between;
-  padding: 2vw;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.324);
   color: black;
 }
+
+
 
 .forecastcard {
   width: 5vw;
@@ -259,4 +276,26 @@ body {
   color: black;
   background-color: #eceeef;
   box-shadow: none;
+}
+
+@media screen and (max-width: 750px) {
+  .forecastcardsdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .forecastcard {
+    width: 50vw;
+  }
+
+  .button-container {
+    margin-top: 3rem;
+  }
+
+  .btn-forecast {
+    width: 5rem;
+    height: 2rem;
+  }
+  
 }
